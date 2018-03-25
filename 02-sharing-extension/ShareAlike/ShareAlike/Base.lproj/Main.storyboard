@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ShareAlike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="highland_cow" translatesAutoresizingMaskIntoConstraints="NO" id="sSV-Ht-hOS">
+                                <rect key="frame" x="50" y="323" width="500" height="277"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwA-te-e7q">
+                                <rect key="frame" x="252" y="285" width="96" height="30"/>
+                                <state key="normal" title="Share Sample">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleShareSampleTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9nS-lE-b36"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Poh-Iy-GER">
+                                <rect key="frame" x="205" y="190" width="191" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alike" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-XA-iqa">
+                                        <rect key="frame" x="107" y="0.0" width="84" height="65"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-MediumItalic" family="Avenir Next Condensed" pointSize="47"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z89-TD-S7Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="65"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="47"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="z89-TD-S7Q" firstAttribute="leading" secondItem="Poh-Iy-GER" secondAttribute="leading" id="F1v-z5-p33"/>
+                                    <constraint firstItem="ZTl-XA-iqa" firstAttribute="leading" secondItem="z89-TD-S7Q" secondAttribute="trailing" id="Uen-QJ-lCy"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZTl-XA-iqa" secondAttribute="trailing" id="ivG-ZG-L1v"/>
+                                    <constraint firstItem="z89-TD-S7Q" firstAttribute="top" secondItem="Poh-Iy-GER" secondAttribute="top" id="t2Q-S5-jor"/>
+                                    <constraint firstItem="ZTl-XA-iqa" firstAttribute="centerY" secondItem="z89-TD-S7Q" secondAttribute="centerY" id="uSj-eP-hjo"/>
+                                    <constraint firstAttribute="bottom" secondItem="z89-TD-S7Q" secondAttribute="bottom" id="z3U-y0-TuB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="ZwA-te-e7q" secondAttribute="centerX" id="6Ul-P1-Frj"/>
+                            <constraint firstAttribute="centerY" secondItem="ZwA-te-e7q" secondAttribute="centerY" id="6qH-u0-Yue"/>
+                            <constraint firstItem="sSV-Ht-hOS" firstAttribute="width" relation="lessThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="width" id="9qE-dJ-zHe"/>
+                            <constraint firstItem="sSV-Ht-hOS" firstAttribute="top" secondItem="ZwA-te-e7q" secondAttribute="bottom" constant="8" id="EUZ-cF-0Sk"/>
+                            <constraint firstItem="ZwA-te-e7q" firstAttribute="top" secondItem="Poh-Iy-GER" secondAttribute="bottom" constant="30" id="TyT-lE-V0q"/>
+                            <constraint firstAttribute="centerX" secondItem="Poh-Iy-GER" secondAttribute="centerX" id="YaC-2J-UCb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="sSV-Ht-hOS" secondAttribute="bottom" id="cmh-fQ-hYP"/>
+                            <constraint firstAttribute="centerX" secondItem="sSV-Ht-hOS" secondAttribute="centerX" id="gcg-6Y-rHT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sharingContentImageView" destination="sSV-Ht-hOS" id="dRe-u8-gxN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="highland_cow" width="500" height="500"/>
+    </resources>
+</document>
